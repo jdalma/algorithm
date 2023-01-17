@@ -7,5 +7,3 @@
 6. **[지름길](https://www.acmicpc.net/problem/1446)**
    - [DP 참고](https://rays-space.tistory.com/16)
 7. **[히스토그램](https://www.acmicpc.net/problem/1725)**
-
-[출처](https://www.crocus.co.kr/843)
