@@ -34,7 +34,7 @@ class 탑 {
                 result.append("0 ");
             }
         }
-        System.out.println(result.toString());
+        System.out.println(result);
     }
 
 }

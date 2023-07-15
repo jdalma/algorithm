@@ -74,7 +74,7 @@ class 전력난 {
 
             int result = 0 ;
             for(Edge edge : list){
-                result += Union(edge);;
+                result += Union(edge);
             }
 
             bw.append(String.valueOf(totalCost - result)).append("\n");

@@ -54,9 +54,6 @@ public class 암호_만들기 {
             }
             else jaCnt++;
         }
-        if(mo && jaCnt >= 2){
-            return true;
-        }
-        else return false;
+        return mo && jaCnt >= 2;
     }
 }

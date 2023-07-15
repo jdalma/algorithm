@@ -171,6 +171,6 @@ class 최대_최소_힙_구현하기 {
             if(value == 0) result.append(heap.get()).append("\n");
             else heap.push(value);
         }
-        System.out.println(result.toString());
+        System.out.println(result);
     }
 }

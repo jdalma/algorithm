@@ -23,7 +23,7 @@ public class 일_이_삼_더하기 {
             mem[3] = 4;
             sb.append(solution(value)).append("\n");
         }
-        System.out.println(sb.toString());
+        System.out.println(sb);
     }
 
     public static int solution(int target){

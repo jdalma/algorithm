@@ -30,7 +30,7 @@ class 최단거리 {
             if(result[i] == Integer.MAX_VALUE) resultString.append("INF\n");
             else resultString.append(result[i]).append("\n");
         }
-        System.out.println(resultString.toString());
+        System.out.println(resultString);
     }
 
     public static void bfs(int stanVertex , int vertexSize){

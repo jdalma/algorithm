@@ -2,7 +2,7 @@ package _01_Fundamentals._03_BagQueueStack.prac;
 
 public class FixedCapacityStackOfStrings {
 
-    private String[] a;
+    private final String[] a;
     private int N;
 
     public FixedCapacityStackOfStrings(int cap) {

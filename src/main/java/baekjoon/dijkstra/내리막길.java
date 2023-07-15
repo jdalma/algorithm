@@ -68,10 +68,7 @@ class 내리막길 {
     }
 
     public static boolean isOutOfRange(int x , int y) {
-        if(x < 0 || x >= row || y < 0 || y >= col) {
-            return true;
-        }
-        return false;
+        return x < 0 || x >= row || y < 0 || y >= col;
     }
 
     static class Move implements Comparable<Move>{

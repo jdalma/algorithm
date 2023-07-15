@@ -9,7 +9,7 @@ public class Template {
         int N = 10;
         for (int i = 1 ; i < N ; i++) {
             for (int j = i + 1 ; j > 0 && less(a[j], a[j - 1]) ; j--) {
-                exch(a, j, j - 1);
+//                exch(a, j, j - 1);
             }
         }
     }

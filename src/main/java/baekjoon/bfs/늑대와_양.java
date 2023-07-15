@@ -21,9 +21,7 @@ class 늑대와_양 {
         for(int i = 0 ; i < row ; i++){
             st = new StringTokenizer(br.readLine());
             char[] line = st.nextToken().toCharArray();
-            for(int j = 0 ; j < line.length ; j++){
-                pasture[i][j] = line[j];
-            }
+            System.arraycopy(line, 0, pasture[i], 0, line.length);
         }
 
         for(int i = 0 ; i < row ; i++){

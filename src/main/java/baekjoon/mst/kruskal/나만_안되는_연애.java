@@ -22,7 +22,7 @@ class 나만_안되는_연애 {
 
         st = new StringTokenizer(br.readLine());
         for(int i = 1 ; i <= collegeCount ; i++){
-            gender[i] = st.nextToken().toString().toCharArray()[0];
+            gender[i] = st.nextToken().toCharArray()[0];
         }
         for(int i = 0 ; i <= collegeCount ; i++) relation[i] = i;
         for(int i = 0 ; i < edgeCount ; i++){

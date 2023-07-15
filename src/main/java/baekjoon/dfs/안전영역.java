@@ -69,9 +69,7 @@ class 안전영역 {
 
     public static void arrayCopy(int[][] a , int[][] b){
         for(int i = 0 ; i < size; i++){
-            for(int j = 0 ; j < size ; j++){
-                a[i][j] = b[i][j];
-            }
+            System.arraycopy(b[i], 0, a[i], 0, size);
         }
     }
 }

@@ -3,7 +3,7 @@ package baekjoon.dijkstra;
 import java.util.*;
 
 class 합승택시요금 {
-    private List<List<Node>> list = new ArrayList<>();
+    private final List<List<Node>> list = new ArrayList<>();
     private int n;
     public static void main(String[] args) {
         합승택시요금 test = new 합승택시요금();

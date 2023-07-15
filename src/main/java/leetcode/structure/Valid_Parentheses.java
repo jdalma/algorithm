@@ -5,7 +5,7 @@ import java.util.*;
 class Valid_Parentheses {
 
     // Hash table that takes care of the mappings.
-    private HashMap<Character, Character> mappings;
+    private final HashMap<Character, Character> mappings;
 
     // Initialize hash map with mappings. This simply makes the code easier to read.
     public Valid_Parentheses() {

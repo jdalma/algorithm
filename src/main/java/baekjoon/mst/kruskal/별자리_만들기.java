@@ -72,7 +72,7 @@ class 별자리_만들기 {
 
         float result = 0f;
         for(Edge edge : edges){
-            result += Union(edge);;
+            result += Union(edge);
         }
 
         bw.append(String.format("%.2f", result));

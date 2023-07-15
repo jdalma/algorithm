@@ -19,7 +19,7 @@ class 양 {
         map = new char[rows][cols];
         checked = new boolean[rows][cols];
         for(int i = 0 ; i < rows ; i++){
-            char[] line = br.readLine().toString().toCharArray();
+            char[] line = br.readLine().toCharArray();
             for(int j = 0 ; j < line.length ; j++){
                 char ch = line[j];
                 map[i][j] = ch;

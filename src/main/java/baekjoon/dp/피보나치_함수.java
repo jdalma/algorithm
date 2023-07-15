@@ -21,7 +21,7 @@ public class 피보나치_함수 {
             useCount(value);
             sb.append(zeroCount).append(" ").append(oneCount).append("\n");
         }
-        System.out.println(sb.toString());
+        System.out.println(sb);
     }
 
     public static int recursive(int value){

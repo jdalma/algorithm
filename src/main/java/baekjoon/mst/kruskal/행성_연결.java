@@ -59,7 +59,7 @@ class 행성_연결 {
 
         long result = 0;
         for(Edge edge : edges){
-            result += Union(edge);;
+            result += Union(edge);
         }
 
         bw.append(String.valueOf(result));

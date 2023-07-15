@@ -10,9 +10,7 @@ class Set_Matrix_Zeroes {
     public int[][] copyArr(int[][] arr){
         int[][] newArr = new int[arr.length][arr[0].length];
         for(int i = 0 ; i < arr.length ; i++){
-            for(int j = 0 ; j < arr[0].length ; j++){
-                newArr[i][j] = arr[i][j];
-            }
+            System.arraycopy(arr[i], 0, newArr[i], 0, arr[0].length);
         }
         return newArr;
     }

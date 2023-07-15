@@ -5,9 +5,7 @@ class Rotate_Image {
         int size = matrix.length;
         int[][] copy = new int[size][size];
         for(int i = 0 ; i < size ; i++){
-            for(int j = 0 ; j < size ; j++){
-                copy[i][j] = matrix[i][j];
-            }
+            System.arraycopy(matrix[i], 0, copy[i], 0, size);
         }
 
         String format = "(%s,%s) %s -> (%s,%s) %s";

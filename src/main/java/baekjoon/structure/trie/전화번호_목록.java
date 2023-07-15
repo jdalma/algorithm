@@ -8,7 +8,7 @@ import java.util.*;
 
 class 전화번호_목록 {
     private static class TrieNode{
-        private Map<Character , TrieNode> childNodes = new HashMap<>();
+        private final Map<Character , TrieNode> childNodes = new HashMap<>();
         private boolean isLastChar = false;
 
         Map<Character , TrieNode> getChildNodes(){
@@ -40,10 +40,7 @@ class 전화번호_목록 {
                 thisNode.setLastChar(false);
                 thisNode = thisNode.getChildNodes().computeIfAbsent(word.charAt(i) , character -> new TrieNode());
             }
-            if(thisNode.getChildNodes().size() > 0){
-                thisNode.setLastChar(false);
-            }
-            else thisNode.setLastChar(true);
+            thisNode.setLastChar(thisNode.getChildNodes().size() <= 0);
 
         }
         boolean contains(String word){

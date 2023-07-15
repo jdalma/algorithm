@@ -7,7 +7,7 @@ class Subtree_Of_Another_Tree {
     boolean answer = false;
 
     public boolean isSubtree(TreeNode s, TreeNode t) {
-        if(s.val == t.val && answer == false){
+        if(s.val == t.val && !answer){
             answer = DFS(s,t);
             if(answer) return answer;
         }

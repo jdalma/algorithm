@@ -32,9 +32,7 @@ public class _02_MergeSort {
         int i = lo;
         int j = mid + 1;
 
-        for (int k = lo; k <= hi; k++) {
-            aux[k] = a[k];
-        }
+        if (hi + 1 - lo >= 0) System.arraycopy(a, lo, aux, lo, hi + 1 - lo);
 
         /**
          * 비교를 절반만 한다.

@@ -34,7 +34,10 @@ class 날짜_계산 {
     public static boolean isSame(){
         boolean result = true;
         for(int i = 0 ; i < 3 ; i++){
-            if(now[i] != year[i]) result = false;
+            if (now[i] != year[i]) {
+                result = false;
+                break;
+            }
         }
         return result;
     }

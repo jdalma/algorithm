@@ -27,7 +27,7 @@ class GCD_합_유클리드호제법 {
             }
             sb.append(solve(numbers)).append("\n");
         }
-        System.out.println(sb.toString());
+        System.out.println(sb);
     }
 
     public static long solve(List<Integer> numbers){

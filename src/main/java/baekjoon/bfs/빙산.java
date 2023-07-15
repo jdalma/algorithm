@@ -59,7 +59,7 @@ class 빙산 {
             }
         }
 
-        return chunkCount > 1 ? true : false;
+        return chunkCount > 1;
     }
 
     public static void checkChunk(int x , int y , boolean[][] checked) {

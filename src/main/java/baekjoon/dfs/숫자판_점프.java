@@ -8,7 +8,7 @@ import java.util.*;
 class 숫자판_점프 {
     static int[] moveX = {-1 , 0 , 1 , 0};
     static int[] moveY = {0 , 1 , 0 , -1};
-    static int map[][] = new int[5][5];
+    static int[][] map = new int[5][5];
     static Set<Integer> resultSet = new HashSet<>();
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

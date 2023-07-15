@@ -71,9 +71,7 @@ class 낚시왕 {
 
     public static void copy(Shark[][] tmp) {
         for (int x = 0; x < row; x++) {
-            for (int y = 0; y < col; y++) {
-                map[x][y] = tmp[x][y];
-            }
+            if (col >= 0) System.arraycopy(tmp[x], 0, map[x], 0, col);
         }
     }
 
@@ -101,7 +99,6 @@ class 낚시왕 {
         }
 
         if (tmp[moveX][moveY] != null && tmp[moveX][moveY].z > shark.z) {
-            return;
         } else {
             tmp[moveX][moveY] = shark;
         }

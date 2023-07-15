@@ -51,7 +51,7 @@ class 인간대포 {
         // 그래프를 어떻게 형성할지??
         // 1. 시작점에서 각 대포와 끝점 까지 걸어가는 가중치
         for(int i = 1 ; i < count + 2 ; i++){
-            edges.get(0).add(new Edge(i , (float) getDistance(positions.get(0) , positions.get(i)) / WALK));
+            edges.get(0).add(new Edge(i , getDistance(positions.get(0) , positions.get(i)) / WALK));
         }
         // 2. 각 대포끼리와 끝점 까지의 가중치
         for(int i = 1 ; i < count + 2 ; i++){

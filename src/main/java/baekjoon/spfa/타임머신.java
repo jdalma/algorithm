@@ -8,9 +8,9 @@ import java.util.*;
 class 타임머신 {
     static List<List<Move>> list = new ArrayList<>();
     static int vertex , edge;
-    static long costArr[];
-    static boolean checked[];
-    static int cycleCount[];
+    static long[] costArr;
+    static boolean[] checked;
+    static int[] cycleCount;
     static final long INF = Long.MAX_VALUE;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -41,7 +41,7 @@ class 타임머신 {
         }
         else sb.append("-1\n");
 
-        System.out.println(sb.toString());
+        System.out.println(sb);
     }
 
     public static boolean solution() {

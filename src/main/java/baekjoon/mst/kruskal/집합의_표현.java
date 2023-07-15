@@ -51,7 +51,7 @@ class 집합의_표현 {
 
         for(int i = 0 ; i < inputLineCount ; i++){
             st = new StringTokenizer(br.readLine());
-            boolean outputFlag = st.nextToken().equals("0") ? false : true;
+            boolean outputFlag = !st.nextToken().equals("0");
             int startNode = Integer.parseInt(st.nextToken());
             int endNode = Integer.parseInt(st.nextToken());
 

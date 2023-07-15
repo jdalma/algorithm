@@ -14,11 +14,10 @@ class 나머지 {
         int B = Integer.parseInt(st.nextToken());
         int C = Integer.parseInt(st.nextToken());
 
-        StringBuilder result = new StringBuilder();
-        result.append( (A + B) % C ).append("\n");
-        result.append( ((A % C) + (B % C)) % C).append("\n");
-        result.append( (A * B) % C ).append("\n");
-        result.append( ((A % C) * (B % C)) % C).append("\n");
-        System.out.println(result.toString());
+        String result = (A + B) % C + "\n" +
+                ((A % C) + (B % C)) % C + "\n" +
+                (A * B) % C + "\n" +
+                ((A % C) * (B % C)) % C + "\n";
+        System.out.println(result);
     }
 }
