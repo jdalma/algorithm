@@ -12,6 +12,7 @@ repositories {
 
 dependencies {
     implementation(kotlin("test"))
+    implementation(files("libs/algs4.jar"))
 }
 
 tasks.test {

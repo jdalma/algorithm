@@ -1,16 +1,14 @@
 package _02_Sort;
 
-import edu.princeton.cs.algs4.*;
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.IndexMinPQ;
+import edu.princeton.cs.algs4.StdOut;
 
 public class _04_PriorityQueueClient {
 
     public static void main(String[] args) {
         int N = 3;
         In[] streams = new In[N];
-
-        streams[0] = new In("G D C A E B");
-        streams[1] = new In("C B A A E D");
-        streams[2] = new In("A A Z E Q Q");ㅖ
 
         merge(streams);
     }
