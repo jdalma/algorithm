@@ -4,13 +4,13 @@ import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.IndexMinPQ;
 import edu.princeton.cs.algs4.StdOut;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 public class _04_PriorityQueueClient {
 
     public static void main(String[] args) {
-        int N = 3;
-        In[] streams = new In[N];
-
-        merge(streams);
     }
 
     private static void merge(In[] streams) {

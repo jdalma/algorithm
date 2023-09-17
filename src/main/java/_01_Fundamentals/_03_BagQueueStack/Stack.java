@@ -62,18 +62,5 @@ public class Stack<Item> implements Iterable<Item> {
     }
 
     public static void main(String[] args) {
-        Stack<Integer> stack = new Stack<Integer>();
-        stack.push(1);
-        stack.push(2);
-        stack.push(3);
-
-        assert stack.pop() == 3;
-        assert stack.size() == 2;
-
-        for(int item: stack) {
-            assert item < 3;
-        }
-
-        System.out.println(new String[10].length);
     }
 }
